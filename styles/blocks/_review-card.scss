@@ -1,0 +1,27 @@
+.review-card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 48px;
+
+  &__body {
+    position: relative;
+    padding: 48px 52px 52px 52px;
+    border: 1px solid var(--color-accent);
+    border-radius: var(--border-radius-large);
+
+    &::after {
+      @include square(40px);
+
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 50px;
+      transform: translateX(-50%);
+      background-color: var(--color-dark);
+      border: inherit;
+      rotate: 45deg;
+      clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+      translate: 0 -50%;
+    }
+  }
+}
