@@ -1,0 +1,29 @@
+.contact-us {
+  position: relative;
+  padding: 60px 100px 80px;
+  background-color: var(--color-gray);
+  border-radius: var(--border-radius-large);
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+  }
+
+  &__form,
+  &__body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    max-width: 556px;
+  }
+
+  &__body {
+    row-gap: 25px;
+  }
+}
